@@ -10,18 +10,24 @@
   <script src="../static/js/backend.js" defer></script>
 </head>
 <body>
-  <h1>London House Price Predictor</h1>
-  <form>
-    <label for="year">Year</label>
-    <select id="year" name="year"></select>
-    <label for="area">Area</label>
-    <select id="area" name="area"></select>
-    <label for='houses_sold'>Houses Sold</label>
-    <input type="number" id="houses_sold" name="houses_sold">
-    <label for='no_of_crime'>Number of Crime</label>
-    <input type='number' name='no_of_crimes' id='no_of_crimes'>
-    <button type="button" class="predict_button">Predict!</button>
-    <div class="prediction"></div>
-  </form>
+  <div class="main-content-holder">
+    <h1 class="main-header">London House Price Predictor</h1>
+    <div class="form-content-holder">
+      <p>Can you afford to live in London? Sure, if you have a kidney or two to spare.</p>
+      <p>Fill out the form below to get a London house price prediction.</p>
+      <form>
+        <label for="year">Year</label>
+        <select id="year" name="year"></select>
+        <label for="area">Area</label>
+        <select id="area" name="area"></select>
+        <label for='houses_sold'>Houses Sold</label>
+        <input type="number" id="houses_sold" name="houses_sold">
+        <label for='no_of_crime'>Number of Crime</label>
+        <input type='number' name='no_of_crimes' id='no_of_crimes'>
+        <button type="button" class="predict_button">Predict!</button>
+        <div class="prediction"></div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
