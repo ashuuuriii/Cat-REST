@@ -31,7 +31,7 @@ function updatePrice(jsonData) {
     if (this.readyState == 4 && this.status == 200) {
       const responsePrediction = JSON.parse(this.responseText);
       const predictionDiv = document.querySelector('.prediction');
-      predictionDiv.textContent = responsePrediction.predicted_price;
+      predictionDiv.textContent = "£" + responsePrediction.predicted_price;
     }
   }
   xmlhttp.send( JSON.stringify( jsonData ) );
