@@ -66,19 +66,19 @@ p {
   font-family: de-valencia;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 300%;
   margin: 5% 5% 3% 5%;;
 }
 
 .form-content-holder {
   margin: 0% 5% 5% 6%;
+  width: 80%;
 }
 
 .fillout-txt {
   margin-bottom: 3%;
   font-weight: bold;
 }
-
 
 .form-fields {
   display: grid;
@@ -89,9 +89,44 @@ p {
 label {
   font-size: 0.75rem;
 }
+
 .label-field-holder {
   display: flex;
   flex-direction: column;
+}
+
+input, select {
+  margin-top: 1%;
+  box-sizing: border-box;
+  width: 70%;
+  background-color: black;
+  color: white;
+  text-indent: 1%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 20px;
+}
+
+select {
+  background-image: url('../img/arrow-204-16.png');
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 .prediction-holder {
@@ -119,5 +154,9 @@ label {
 
   .form-fields {
     grid-template-columns: auto;
+  }
+
+  input, select {
+    width: 100%;
   }
 }
