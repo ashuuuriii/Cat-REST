@@ -47,6 +47,7 @@ body {
 
 p {
   margin-bottom: 1%;
+  font-size: 1rem;
 }
 
 .main-content-holder {
@@ -102,6 +103,7 @@ input, select {
   background-color: black;
   color: white;
   text-indent: 1%;
+  font-size: 1rem;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -133,8 +135,32 @@ input[type="number"] {
   margin-top: 3%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+button {
+  display: block;
+  border: solid white;
+  border-width: 1px;
+  border-radius: 0;
+  background-color: white;
+  color: black;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.prediction {
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+/* the black main-content holder becomes too small at smaller screen sizes*/
 @media(max-width: 960px) {
   .main-content-holder{
     width: 65%;
