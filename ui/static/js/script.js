@@ -25,8 +25,7 @@ function buildJson() {
 function updatePrice(jsonData) {
   // AJAX request to the REST API
   const xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("POST", "http://127.0.0.1:5000/predict_price", true);
-  // xmlhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
+  xmlhttp.open("POST", "https://cat-housing-price-predictor.herokuapp.com/predict_price", true);
   xmlhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
       const responsePrediction = JSON.parse(this.responseText);
