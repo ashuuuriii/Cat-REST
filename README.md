@@ -1,10 +1,10 @@
 # Cat-REST
 ## Table of Contents
-- [About] (#about)
-- [Motivations] (#motivations)
-  - [Why CatBoost?] (#why-cat-boost)
-  - [Why Flask-CORS?] (#why-flask-cors)
-  - [Why Meyer's Reset] (#why-meyers-reset)
+- [About](#about)
+- [Motivations](#motivations)
+  - [Why CatBoost?](#why-cat-boost)
+  - [Why Flask-CORS?](#why-flask-cors)
+  - [Why Meyer's Reset](#why-meyers-reset)
 ## About
 This is a small project which I started to teach myself a bit more about REST APIs and deploying machine learning models outside of CLI interfaces. I've been working through The Odin Project and decided to make a front-end for the API as a replacement for the sign-up form project suggested.
 
