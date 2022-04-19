@@ -1,4 +1,4 @@
-// the interface for this project is being implemented without a backend.
+// used to mimic templating
 const yearDropdown = document.querySelector('#year');
 const years = Array.from(new Array(26), (x, i) => i + 1995);
 const areaDropdown = document.querySelector('#area');
@@ -28,7 +28,8 @@ function populateDropdown(field, data) {
 }
 
 function cleanString(str) {
-  let retStr = str.replace(/^\w/, c => c.toUpperCase());
+  // regex: match any alphanumeric character(\w) after _ or boundary(\b) globally(\g)
+  let retStr = str.replace(/(_|\b)\w/g, c => c.toUpperCase());
   retStr = retStr.replaceAll('_', ' ');
   return retStr;
 }
